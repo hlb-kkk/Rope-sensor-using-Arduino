@@ -15,7 +15,7 @@ Parameters:
  This type of rope sensor have to work under 5V, one pulse corresponding to 0.064mm. It means, the distance 
  corresponding to one circle is about 2500*0.064=160mm.
    
- And here using <<three phase output>> rope sensor. A,B,Z. Phase A and Phase B have 90 degree phase difference 
+ And here using <three phase output> rope sensor. A,B,Z. Phase A and Phase B have 90 degree phase difference 
  which can help us to distinguish the clockwise and counterclockwise rotation. 
  If digitalRead PinA is LOW and the digitalRead PinB is HIGH, it means conterclockwise. 
  If digitalRead PinA is LOW and the digitalRead PinB is LOW, it means clockwise. 
@@ -25,6 +25,7 @@ Parameters:
   
  The distance can be measured by corresponding the number of turns and of the pulse. 
  Using two interrupt to reset the pulse number and to count the time. Function "millis()" is used to be the timekeeper. 
+ The details of this function can be seen in the follow link https://www.arduino.cc/reference/en/language/functions/time/millis/
  The maximun time can be recorded is about 50 days. 
  
  
